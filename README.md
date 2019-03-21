@@ -28,3 +28,6 @@ This will open GraphiQL in a browser window. add the following query:
   hello
 }
 ```
+This particular example is demonstrating how you can write an express api inside of a google cloud function utilising a graphQL data layer. Using graphQL is optional but essentially its a way to build out an API inside of a firebase environment as a stepping stone should an application need to be migrated over to another environment in the future.
+
+All of your endpoints are written inside of the cloud function and so moving the code into a new enviroment would then require only a new root / port and the replacement of the database query functions if a different database is chosen in future.
