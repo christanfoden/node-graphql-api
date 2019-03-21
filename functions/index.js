@@ -1,7 +1,7 @@
-import * as functions from "firebase-functions";
+const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 admin.initializeApp(functions.config().firebase);
-export const db = admin.firestore();
+// export const db = admin.firestore();
 
 const express = require("express");
 const graphqlHTTP = require("express-graphql");

@@ -1,6 +1,6 @@
 const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require("graphql");
 
-export const schema = new GraphQLSchema({
+const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: "RootQueryType",
     fields: {
@@ -13,3 +13,5 @@ export const schema = new GraphQLSchema({
     }
   })
 });
+
+module.exports = { schema };
